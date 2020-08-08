@@ -7,16 +7,48 @@
     <meta httpequiv=X-UA-Compatible content="IE=edge,chrome=1">
     <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
     <meta name=version content=0.1.0>
+    <link rel=icon type=image/png href=assets/images/favicon.png>
     <title>Bright Rust</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        nav img,
+        footer img {
+            max-width: 3em;
+        }
+
+        nav .d-md-inline-block img {
+            max-width: 2em;
+        }
+
+        #hero img {
+            max-width: 14em;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
-    <div id=root>
-        <h1>
-            Bright Rust
-        </h1>
-        For now, find us on <a href="https://github.com/BrightRust">GitHub</a>
+    <nav class="site-header py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2" href="https://brightrs.com">
+                <img src="assets/images/favicon.png" alt="logo" />
+            </a>
+            <a class="py-2 d-none d-md-inline-block" href="https://github.com/BrightRust">
+                For now, find us on <img src="assets/images/github-logo.png" /></a>
+        </div>
+    </nav>
 
+    <div id="hero" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 font-weight-normal">Bright Rust</h1>
+            <img src="assets/images/bright-rust-logo.png" alt="Bright Rust Logo" />
+            <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+        </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
         <ul>
             <li>Blazing Fast <g-emoji class="g-emoji" alias="rocket"
                     fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png"><img
@@ -75,6 +107,14 @@
             </li>
         </ul>
     </div>
+
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+                <img src="assets/images/favicon.png" alt="logo" />
+                <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+            </div>
+    </footer>
 </body>
 
 </html>
